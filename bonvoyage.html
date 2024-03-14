@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BON VOYAGE</title>
+    <link rel="stylesheet" href="bonvoyage_style.css">
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="title">
+                <img src="img/voyagetriangle.webp" alt="title"><br>
+                BON VOYAGE<br>
+                <span>Best Prices, Best Holidays</span>
+            </h1>
+            <ul class="top_menu clear">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Book Now</a></li>
+            </ul>
+        </header>
+        <div class="visual clear">
+            <div class="searchbox">
+                <ul class="search">
+                    <li>
+                        <a href="#"><img src="img/voyage_fb.wix_mp" alt="fb"></a>
+                        <a href="#"><img src="img/voyage_tw.webp" alt="tw"></a>
+                        <a href="#"><img src="img/voyage_ist.webp" alt="ist"></a>
+                        <a href="#"><img src="img/voyage_p.webp" alt="p"></a>
+                    </li>
+                    <li>
+                        <img src="img/voyageglasess.webp" alt="glasses">
+                        <a href="#">SEARCH</a>
+                        <p>For A Holiday</p>
+                    </li>
+                    <li>
+                        WELCOME TO OUR WORLD
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="banner">
+                <ul class="slider">
+                    <li><img src="img/voyage_b1.webp" alt="1"></li>
+                    <li><img src="img/voyage_b2.webp" alt="2"></li>
+                    <li><img src="img/voyage_b3.webp" alt="3"></li>
+                    <li><img src="img/voyage_b4.webp" alt="4"></li>
+                </ul>
+                <div class="leftB">
+                        <img src="img/leftBtn.png" alt="left"
+                        class="leftBtn" onclick="Btn(0)">
+                </div>
+                <div class="rightB">
+                        <img src="img/rightBtn.png" alt="right"
+                        class="rightBtn" onclick="Btn(1)">
+                </div>           
+            </div>
+        </div>
+        <div class="content clear">
+            <section class="leftPart">
+                <article>
+                    <p>Handpicked Offers</p>
+                    <img src="img/voyagetime.webp" alt="time">
+                    <div class="charge">
+                        <div class="detail">
+                            <p>
+                                Switzerland
+                                <span>------------------</span>
+                                $592
+                            </p>
+                            <p>
+                                England
+                                <span>---------------------</span>
+                                $635
+                            </p>
+                            <p>
+                                Netherlands
+                                <span>-----------------</span>
+                                $688
+                            </p>
+                            <p>
+                                Canada
+                                <span>---------------------</span>
+                                $539
+                            </p>
+                            <p>
+                                U.S.A
+                                <span>-----------------------</span>
+                                $512
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <p>Summer Destinations</p>
+                    <img src="img/voyageairplane.webp" alt="ap">
+                    <div class="charge">
+                        <div class="detail">
+                            <p>
+                                Madrid
+                                <span>---------------------</span>
+                                $480
+                            </p>
+                            <p>
+                                Milan
+                                <span>-----------------------</span>
+                                $412
+                            </p>
+                            <p>
+                                New York
+                                <span>-------------------</span>
+                                $505
+                            </p>
+                            <p>
+                                Zurich
+                                <span>----------------------</span>
+                                $551
+                            </p>
+                            <p>
+                                Manchester
+                                <span>------------------</span>
+                                $611
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <aside class="rightPart">
+                <article>
+                    <span>$649</span>
+                    <p>Romantic Provence<br>Gateway</p>
+                    <img src="img/under_bar.webp" alt="under_bar">
+                </article>
+                <article>
+                    <span>$449</span>
+                    <p>8 Nights Alaska Cruise<br> All Inclusive</p>
+                    <img src="img/under_bar.webp" alt="under_bar">
+                </article>
+                <article>
+                    <span>$899</span>
+                    <p>4 Nights All Inclusive<br>Cancun Resort & Spa</p>
+                    <img src="img/under_bar.webp" alt="under_bar">
+                </article>
+            </aside>
+        </div>
+    </div>
+    <div class="menuImg">
+        <div class="inner">
+            <ul class="imgList clear">
+                <li><img src="img/mb1.jpg" alt="1"></li>
+                <li><img src="img/mb2.jpg" alt="2"></li>
+                <li><img src="img/mb3.jpg" alt="3"></li>
+                <li><img src="img/mb4.jpg" alt="4"></li>
+                <li><img src="img/mb5.jpg" alt="5"></li>
+                <li><img src="img/mb6.jpg" alt="6"></li>
+            </ul>
+            <div class="bigImg">
+                <img src="img/mb1.jpg" alt="1">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="botInner clear">
+            <div class="botLeft">
+                <p>               
+                    500 Terry Francois Street<br>
+                    San Francisco, CA 94158<br>
+                    yunseong7@naver.com<br>
+                    Tel: 02-2069-1931<br>
+                    Fax: 02-2069-1932
+                </p>
+            </div>
+            <div class="botRight">
+                <p>
+                    BOOK YOUR VACATION NOW
+                </p>
+                <a href="#">G O</a>
+            </div>
+        </div>
+    </footer>
+    <span class="TOP_btn">
+        <a href="#">TOP</a>
+    </span>
+    <script>
+        var slideList = document.querySelector(".slider");
+        var num = 0
+            function Btn(btn){
+            if(btn == 1){
+                num++;
+                if(num > 3){
+                    num = 0;
+                }
+            }
+            else{
+                num--;
+                if(num < 1){
+                    num = 3;
+                }
+            }
+            slideList.style.left = num * -630 + "px";
+        }
+        $(function(){
+            $(".imgList li").on({
+                mouseover : function(){
+                    $(this).children("img").css({
+                        filter : "grayscale(0)",
+                        transform : "scale(1.1)"
+                    });
+                },
+
+                mouseout : function(){
+                    $(this).children("img").css({
+                        filter : "grayscale(1)",
+                        transform : "scale(1)"
+                    });
+                },
+
+                click : function(){
+
+                    $('.bigImg').animate({'opacity': 0}, 400, function(){
+                        $(this).css("display", "none");
+                    });
+                    var idx = $(this).index();
+                    console.log(idx);
+                    $('.imgList').animate({'margin-left': 0}, 1000, function(){
+                    var src = $('.imgList li').eq(idx).children('img').attr('src');
+                    console.log(src);
+                    $('.bigImg img').attr('src',src);
+                    $('.bigImg').css("display", "block").animate({'opacity':1}, 500, function(){});
+                    })
+
+                }
+            });
+
+            $(".bigImg").click(function(){
+                $(this).fadeOut(1000);
+
+                $(".imgList").delay(800).animate({
+                    "margin-left": "348px"
+                }, 500);
+            })
+        })
+    </script>
+</body>
+</html>
